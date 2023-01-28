@@ -11,7 +11,7 @@ export default defineNuxtPlugin((nuxtApp)=>{
         integrations: [
             new BrowserTracing({
             routingInstrumentation: Sentry.vueRouterInstrumentation(router),
-            tracePropagationTargets: ["localhost", "my-site-url.com", /^\//],
+            tracePropagationTargets: ["localhost", "try-nuxt3-sentry.pages.dev", /^\//],
             }),
         ],
         // Set tracesSampleRate to 1.0 to capture 100%
