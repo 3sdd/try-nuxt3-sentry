@@ -7,7 +7,7 @@ export default defineNuxtPlugin((nuxtApp)=>{
     const router=useRouter()
     Sentry.init({
         app,
-        dsn: "https://5332f3996b5d4d98ba3906140e3bc3b9@o4504583063666688.ingest.sentry.io/4504583091978240",
+        dsn: "https://75baa9c30f774556bea5fa35ea35c6d9@o4504583063666688.ingest.sentry.io/4504583122780160",
         integrations: [
             new BrowserTracing({
             routingInstrumentation: Sentry.vueRouterInstrumentation(router),
